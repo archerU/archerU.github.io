@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>鹿森</title>
+  
+  <subtitle>Don&#39;t make me think!</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://archeru.github.io/"/>
+  <updated>2019-12-08T08:04:55.000Z</updated>
+  <id>https://archeru.github.io/</id>
+  
+  <author>
+    <name>鹿森</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>html 标签</title>
+    <link href="https://archeru.github.io/2019/12/08/html/html%E6%A0%87%E7%AD%BE/"/>
+    <id>https://archeru.github.io/2019/12/08/html/html标签/</id>
+    <published>2019-12-08T08:04:55.000Z</published>
+    <updated>2019-12-08T08:04:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="内容分区"><a href="#内容分区" class="headerlink" title="内容分区"></a>内容分区</h2><h2 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h2><h3 id="块级文本"><a href="#块级文本" class="headerlink" title="块级文本"></a>块级文本</h3><h3 id="内联文本"><a href="#内联文本" class="headerlink" title="内联文本"></a>内联文本</h3><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><h2 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h2><h2 id="图片与多媒体"><a href="#图片与多媒体" class="headerlink" title="图片与多媒体"></a>图片与多媒体</h2><h2 id="内嵌内容"><a href="#内嵌内容" class="headerlink" title="内嵌内容"></a>内嵌内容</h2><h2 id="交互元素"><a href="#交互元素" class="headerlink" title="交互元素"></a>交互元素</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;内容分区&quot;&gt;&lt;a href=&quot;#内容分区&quot; class=&quot;headerlink&quot; title=&quot;内容分区&quot;&gt;&lt;/a&gt;内容分区&lt;/h2&gt;&lt;h2 id=&quot;文本&quot;&gt;&lt;a href=&quot;#文本&quot; class=&quot;headerlink&quot; title=&quot;文本&quot;&gt;&lt;/a&gt;文本&lt;/h
+      
+    
+    </summary>
+    
+      <category term="html5" scheme="https://archeru.github.io/categories/html5/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>React 同构</title>
+    <link href="https://archeru.github.io/2019/12/08/React%E5%90%8C%E6%9E%84/"/>
+    <id>https://archeru.github.io/2019/12/08/React同构/</id>
+    <published>2019-12-08T08:04:55.000Z</published>
+    <updated>2019-12-08T08:04:55.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="React" scheme="https://archeru.github.io/categories/React/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>排序算法</title>
+    <link href="https://archeru.github.io/2019/12/08/algorithm/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
+    <id>https://archeru.github.io/2019/12/08/algorithm/排序算法/</id>
+    <published>2019-12-08T08:04:55.000Z</published>
+    <updated>2019-12-08T08:04:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="比较排序"><a href="#比较排序" class="headerlink" title="比较排序"></a>比较排序</h2><h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><h5 id="性能："><a href="#性能：" class="headerlink" title="性能："></a>性能：</h5><ul><li>时间复杂度</li><li>空间复杂度</li></ul><h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><h3 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h3><h2 id="统计排序"><a href="#统计排序" class="headerlink" title="统计排序"></a>统计排序</h2><h3 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h3><h3 id="基数排序"><a href="#基数排序" class="headerlink" title="基数排序"></a>基数排序</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;比较排序&quot;&gt;&lt;a href=&quot;#比较排序&quot; class=&quot;headerlink&quot; title=&quot;比较排序&quot;&gt;&lt;/a&gt;比较排序&lt;/h2&gt;&lt;h3 id=&quot;冒泡排序&quot;&gt;&lt;a href=&quot;#冒泡排序&quot; class=&quot;headerlink&quot; title=&quot;冒泡排序&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+      <category term="algorithm" scheme="https://archeru.github.io/categories/algorithm/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>二叉树和二叉查找树</title>
+    <link href="https://archeru.github.io/2019/12/08/algorithm/tree/"/>
+    <id>https://archeru.github.io/2019/12/08/algorithm/tree/</id>
+    <published>2019-12-08T08:04:55.000Z</published>
+    <updated>2019-12-08T08:04:55.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Data Structures" scheme="https://archeru.github.io/categories/Data-Structures/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>浮动与清除浮动大总结</title>
+    <link href="https://archeru.github.io/2019/12/08/css/%E6%B5%AE%E5%8A%A8%E4%B8%8E%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E5%A4%A7%E6%80%BB%E7%BB%93/"/>
+    <id>https://archeru.github.io/2019/12/08/css/浮动与清除浮动大总结/</id>
+    <published>2019-12-08T08:04:55.000Z</published>
+    <updated>2019-12-08T08:04:55.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="css3" scheme="https://archeru.github.io/categories/css3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Git 操作手册</title>
+    <link href="https://archeru.github.io/2019/12/08/git%E6%89%8B%E5%86%8C/"/>
+    <id>https://archeru.github.io/2019/12/08/git手册/</id>
+    <published>2019-12-08T08:04:55.000Z</published>
+    <updated>2019-12-08T08:04:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h2><h4 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 把这个目录变成Git可以管理的仓库</span><br><span class="line">git init</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 添加远程仓库</span><br><span class="line">git remote add origin git@github.com:&lt;githubname&gt;/&lt;name&gt;.git</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 推送到远程仓库</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure><h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><h4 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 创建分支</span><br><span class="line">git branch &lt;name&gt;</span><br><span class="line"></span><br><span class="line">// 创建并切换到新的分支</span><br><span class="line">git checkout -b &lt;name&gt;</span><br><span class="line"></span><br><span class="line">// 创建远程分支</span><br><span class="line">git push origin &lt;name&gt;</span><br></pre></td></tr></table></figure><h4 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 查看本地分支</span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line">// 查看远程分支</span><br><span class="line">git branch -r</span><br></pre></td></tr></table></figure><h4 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 删除本地分支</span><br><span class="line">git branch -d &lt;name&gt; </span><br><span class="line"></span><br><span class="line">// 强制删除本地分支</span><br><span class="line">git branch -D &lt;name&gt;</span><br><span class="line"></span><br><span class="line">// 删除远程分支</span><br><span class="line">git push origin :&lt;name&gt;</span><br></pre></td></tr></table></figure><h2 id="Tag"><a href="#Tag" class="headerlink" title="Tag"></a>Tag</h2><h4 id="增加tag"><a href="#增加tag" class="headerlink" title="增加tag"></a>增加tag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 增加本地tag</span><br><span class="line">git tag &lt;tagname&gt;</span><br></pre></td></tr></table></figure><h4 id="查看tag"><a href="#查看tag" class="headerlink" title="查看tag"></a>查看tag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag -l</span><br></pre></td></tr></table></figure><h4 id="删除tag"><a href="#删除tag" class="headerlink" title="删除tag"></a>删除tag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 删除本地tag</span><br><span class="line">git tag -d &lt;tagname&gt;</span><br><span class="line"></span><br><span class="line">// 删除远程tag</span><br><span class="line">git push origin :&lt;tagname&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;创建&quot;&gt;&lt;a href=&quot;#创建&quot; class=&quot;headerlink&quot; title=&quot;创建&quot;&gt;&lt;/a&gt;创建&lt;/h2&gt;&lt;h4 id=&quot;创建版本库&quot;&gt;&lt;a href=&quot;#创建版本库&quot; class=&quot;headerlink&quot; title=&quot;创建版本库&quot;&gt;&lt;/a&gt;创建版本
+      
+    
+    </summary>
+    
+      <category term="Git" scheme="https://archeru.github.io/categories/Git/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>js 的数字精度</title>
+    <link href="https://archeru.github.io/2019/12/08/js/%E6%95%B0%E5%AD%A6%E7%B2%BE%E5%BA%A6/"/>
+    <id>https://archeru.github.io/2019/12/08/js/数学精度/</id>
+    <published>2019-12-08T08:04:55.000Z</published>
+    <updated>2019-12-08T08:04:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="数字精度丢失的典型问题"><a href="#数字精度丢失的典型问题" class="headerlink" title="数字精度丢失的典型问题"></a>数字精度丢失的典型问题</h2><h5 id="1、两个浮点数相加-（部分浮点数相加导致精度丢失问题）"><a href="#1、两个浮点数相加-（部分浮点数相加导致精度丢失问题）" class="headerlink" title="1、两个浮点数相加 （部分浮点数相加导致精度丢失问题）"></a>1、两个浮点数相加 （部分浮点数相加导致精度丢失问题）</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0.1 + 0.2 != 0.3 // true</span><br></pre></td></tr></table></figure><h5 id="2、大整数运算"><a href="#2、大整数运算" class="headerlink" title="2、大整数运算"></a>2、大整数运算</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">9999999999999999 == 10000000000000001 // true</span><br><span class="line"></span><br><span class="line">16位数等于17位数？</span><br></pre></td></tr></table></figure><h5 id="3、toFixed"><a href="#3、toFixed" class="headerlink" title="3、toFixed()"></a>3、toFixed()</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1.335.toFixed(2) (Chrome)</span><br><span class="line">// 1.33</span><br><span class="line"></span><br><span class="line">1.334.toFixed(2) (Chrome)</span><br><span class="line">// 1.33</span><br><span class="line"></span><br><span class="line">1.336.toFixed(2) (Chrome)</span><br><span class="line">// 1.34</span><br><span class="line"></span><br><span class="line">四舍五入，在五这个中间点有问题</span><br></pre></td></tr></table></figure><h2 id="数字精度丢失的原因"><a href="#数字精度丢失的原因" class="headerlink" title="数字精度丢失的原因"></a>数字精度丢失的原因</h2><h2 id="数字精度丢失的解决方案"><a href="#数字精度丢失的解决方案" class="headerlink" title="数字精度丢失的解决方案"></a>数字精度丢失的解决方案</h2><p>1、整数 运算结果不超过 Math.pow(2,53) 就不会丢失精度。</p><p>2、小数 把小数乘倍数，操作，再缩小回原来倍数。</p><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://www.cnblogs.com/snandy/p/4943138.html" target="_blank" rel="noopener">JavaScript数字精度丢失问题总结</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;数字精度丢失的典型问题&quot;&gt;&lt;a href=&quot;#数字精度丢失的典型问题&quot; class=&quot;headerlink&quot; title=&quot;数字精度丢失的典型问题&quot;&gt;&lt;/a&gt;数字精度丢失的典型问题&lt;/h2&gt;&lt;h5 id=&quot;1、两个浮点数相加-（部分浮点数相加导致精度丢失问题）&quot;&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Date 日期处理</title>
+    <link href="https://archeru.github.io/2019/12/08/js/%E6%97%A5%E6%9C%9F/"/>
+    <id>https://archeru.github.io/2019/12/08/js/日期/</id>
+    <published>2019-12-08T08:04:55.000Z</published>
+    <updated>2019-12-08T08:04:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前提知识"><a href="#前提知识" class="headerlink" title="前提知识"></a>前提知识</h2><h3 id="时区"><a href="#时区" class="headerlink" title="时区"></a>时区</h3><p>以英国（格林尼治天文台旧址）即本初子午线为中时区（零时区）、东1-12区，西1-12区。每个时区横跨经度15度，时间为1小时。</p><h3 id="区时"><a href="#区时" class="headerlink" title="区时"></a>区时</h3><p>每个时区的中央经线上的时间就是这个时区内统一采用的时间，称为区时。</p><h3 id="UTC-协调世界时"><a href="#UTC-协调世界时" class="headerlink" title="UTC 协调世界时"></a>UTC 协调世界时</h3><p>协调世界时，又称世界统一时间、世界标准时间、国际协调时间。</p><h3 id="GMT-格林尼治标准时"><a href="#GMT-格林尼治标准时" class="headerlink" title="GMT 格林尼治标准时"></a>GMT 格林尼治标准时</h3><p>格林尼治标准时间的正午是指当太阳横穿格林尼治子午线时的时间。<br>在不需要精确到秒的情况下，通常将GMT 和UTC 视作等同。但UTC 更加科学更加精确，它是以原子时为基础，在时刻上尽量接近世界时的一种时间计量系统。</p><h2 id="软件系统中的时间"><a href="#软件系统中的时间" class="headerlink" title="软件系统中的时间"></a>软件系统中的时间</h2><h3 id="RTC-硬件时钟"><a href="#RTC-硬件时钟" class="headerlink" title="RTC 硬件时钟"></a>RTC 硬件时钟</h3><p>实时时钟为操作系统提供了一个可靠的时间，并且在断电的情况下，RTC实时时钟也可以通过电池供电，一直运行下去，用来保存和同步计算机操作系统时间。</p><h3 id="系统时钟"><a href="#系统时钟" class="headerlink" title="系统时钟"></a>系统时钟</h3><p>系统时钟，操作系统认知的时间，包括时区信息和UTC时间（unix时戳均使用1970年1月1日0时0分0秒到目前的UTC秒数）两部分。</p><h3 id="本地-local-时间"><a href="#本地-local-时间" class="headerlink" title="本地 local 时间"></a>本地 local 时间</h3><p>rtc保存的时间可以有两种，一是utc时间，二是local时间，以东八区为例：</p><ul><li>当rtc时间为utc时间：系统utc时间 = rtc时间， 本地local时间 = rtc时间 + 8小时</li><li>当rtc时间为local时间：系统utc时间 = rtc时间 - 8小时， 本地local时间 = rtc时间</li></ul><p>两种设置都可以，没有明确规定，不过一般Windows和Linux都默认rtc保存local本地时间。</p><h2 id="Date-对象与函数"><a href="#Date-对象与函数" class="headerlink" title="Date 对象与函数"></a>Date 对象与函数</h2><h2 id="开源库"><a href="#开源库" class="headerlink" title="开源库"></a>开源库</h2><h3 id="Moment-js"><a href="#Moment-js" class="headerlink" title="Moment.js"></a><a href="http://momentjs.cn/" target="_blank" rel="noopener">Moment.js</a></h3><h2 id="写一个库"><a href="#写一个库" class="headerlink" title="写一个库"></a>写一个库</h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://blog.csdn.net/u010507799/article/details/52288190" target="_blank" rel="noopener">时间时区概念及常用时间函数</a></p><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" rel="noopener">Developer Date</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;前提知识&quot;&gt;&lt;a href=&quot;#前提知识&quot; class=&quot;headerlink&quot; title=&quot;前提知识&quot;&gt;&lt;/a&gt;前提知识&lt;/h2&gt;&lt;h3 id=&quot;时区&quot;&gt;&lt;a href=&quot;#时区&quot; class=&quot;headerlink&quot; title=&quot;时区&quot;&gt;&lt;/a&gt;时区&lt;/h
+      
+    
+    </summary>
+    
+      <category term="javascript" scheme="https://archeru.github.io/categories/javascript/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>js 随机数</title>
+    <link href="https://archeru.github.io/2019/12/08/js/%E9%9A%8F%E6%9C%BA%E6%95%B0/"/>
+    <id>https://archeru.github.io/2019/12/08/js/随机数/</id>
+    <published>2019-12-08T08:04:55.000Z</published>
+    <updated>2019-12-08T08:04:55.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="javascript" scheme="https://archeru.github.io/categories/javascript/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>linux 常用指令</title>
+    <link href="https://archeru.github.io/2019/12/08/linux/linux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
+    <id>https://archeru.github.io/2019/12/08/linux/linux常用指令/</id>
+    <published>2019-12-08T08:04:55.000Z</published>
+    <updated>2019-12-08T08:04:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="目录操作"><a href="#目录操作" class="headerlink" title="目录操作"></a>目录操作</h2><h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;目录操作&quot;&gt;&lt;a href=&quot;#目录操作&quot; class=&quot;headerlink&quot; title=&quot;目录操作&quot;&gt;&lt;/a&gt;目录操作&lt;/h2&gt;&lt;h2 id=&quot;文件操作&quot;&gt;&lt;a href=&quot;#文件操作&quot; class=&quot;headerlink&quot; title=&quot;文件操作&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://archeru.github.io/categories/linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SEO 优化指南</title>
+    <link href="https://archeru.github.io/2019/12/08/optimizing&amp;performance/SEO/"/>
+    <id>https://archeru.github.io/2019/12/08/optimizing&amp;performance/SEO/</id>
+    <published>2019-12-08T08:04:55.000Z</published>
+    <updated>2019-12-08T08:04:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="SEO"><a href="#SEO" class="headerlink" title="SEO"></a>SEO</h2><p>Search engine optimization，搜索引擎优化。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;SEO&quot;&gt;&lt;a href=&quot;#SEO&quot; class=&quot;headerlink&quot; title=&quot;SEO&quot;&gt;&lt;/a&gt;SEO&lt;/h2&gt;&lt;p&gt;Search engine optimization，搜索引擎优化。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="性能和优化" scheme="https://archeru.github.io/categories/%E6%80%A7%E8%83%BD%E5%92%8C%E4%BC%98%E5%8C%96/"/>
+    
+    
+  </entry>
+  
+</feed>

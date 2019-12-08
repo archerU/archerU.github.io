@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hans" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Git 操作手册 - 鹿森</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="lusen,"> 
+    <meta name="description" content="web,创建创建版本库12// 把这个目录变成Git可以管理的仓库git init
+12// 添加远程仓库git remote add origin git@github.com:&amp;lt;githubnam,"> 
+    <meta name="author" content="鹿森"> 
+    <link rel="alternative" href="atom.xml" title="鹿森" type="application/atom+xml"> 
+    <link rel="icon" href="/img/"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">鹿森</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="https://archeru.github.io"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">Git 操作手册</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Git 操作手册</h1>
+        <div class="stuff">
+            <span>十二月 08, 2019</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h2 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h2><h4 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 把这个目录变成Git可以管理的仓库</span><br><span class="line">git init</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 添加远程仓库</span><br><span class="line">git remote add origin git@github.com:&lt;githubname&gt;/&lt;name&gt;.git</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 推送到远程仓库</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><h4 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 创建分支</span><br><span class="line">git branch &lt;name&gt;</span><br><span class="line"></span><br><span class="line">// 创建并切换到新的分支</span><br><span class="line">git checkout -b &lt;name&gt;</span><br><span class="line"></span><br><span class="line">// 创建远程分支</span><br><span class="line">git push origin &lt;name&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 查看本地分支</span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line">// 查看远程分支</span><br><span class="line">git branch -r</span><br></pre></td></tr></table></figure>
+<h4 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 删除本地分支</span><br><span class="line">git branch -d &lt;name&gt; </span><br><span class="line"></span><br><span class="line">// 强制删除本地分支</span><br><span class="line">git branch -D &lt;name&gt;</span><br><span class="line"></span><br><span class="line">// 删除远程分支</span><br><span class="line">git push origin :&lt;name&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Tag"><a href="#Tag" class="headerlink" title="Tag"></a>Tag</h2><h4 id="增加tag"><a href="#增加tag" class="headerlink" title="增加tag"></a>增加tag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 增加本地tag</span><br><span class="line">git tag &lt;tagname&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="查看tag"><a href="#查看tag" class="headerlink" title="查看tag"></a>查看tag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag -l</span><br></pre></td></tr></table></figure>
+<h4 id="删除tag"><a href="#删除tag" class="headerlink" title="删除tag"></a>删除tag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 删除本地tag</span><br><span class="line">git tag -d &lt;tagname&gt;</span><br><span class="line"></span><br><span class="line">// 删除远程tag</span><br><span class="line">git push origin :&lt;tagname&gt;</span><br></pre></td></tr></table></figure>
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/5146554.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/qq/001faIUs4M2zna.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class='side'>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建"><span class="toc-number">1.</span> <span class="toc-text"><a href="#&#x521B;&#x5EFA;" class="headerlink" title="&#x521B;&#x5EFA;"></a>&#x521B;&#x5EFA;</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#创建版本库"><span class="toc-number">1.0.1.</span> <span class="toc-text"><a href="#&#x521B;&#x5EFA;&#x7248;&#x672C;&#x5E93;" class="headerlink" title="&#x521B;&#x5EFA;&#x7248;&#x672C;&#x5E93;"></a>&#x521B;&#x5EFA;&#x7248;&#x672C;&#x5E93;</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分支"><span class="toc-number">2.</span> <span class="toc-text"><a href="#&#x5206;&#x652F;" class="headerlink" title="&#x5206;&#x652F;"></a>&#x5206;&#x652F;</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#创建分支"><span class="toc-number">2.0.1.</span> <span class="toc-text"><a href="#&#x521B;&#x5EFA;&#x5206;&#x652F;" class="headerlink" title="&#x521B;&#x5EFA;&#x5206;&#x652F;"></a>&#x521B;&#x5EFA;&#x5206;&#x652F;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#查看分支"><span class="toc-number">2.0.2.</span> <span class="toc-text"><a href="#&#x67E5;&#x770B;&#x5206;&#x652F;" class="headerlink" title="&#x67E5;&#x770B;&#x5206;&#x652F;"></a>&#x67E5;&#x770B;&#x5206;&#x652F;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#删除分支"><span class="toc-number">2.0.3.</span> <span class="toc-text"><a href="#&#x5220;&#x9664;&#x5206;&#x652F;" class="headerlink" title="&#x5220;&#x9664;&#x5206;&#x652F;"></a>&#x5220;&#x9664;&#x5206;&#x652F;</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tag"><span class="toc-number">3.</span> <span class="toc-text"><a href="#Tag" class="headerlink" title="Tag"></a>Tag</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#增加tag"><span class="toc-number">3.0.1.</span> <span class="toc-text"><a href="#&#x589E;&#x52A0;tag" class="headerlink" title="&#x589E;&#x52A0;tag"></a>&#x589E;&#x52A0;tag</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#查看tag"><span class="toc-number">3.0.2.</span> <span class="toc-text"><a href="#&#x67E5;&#x770B;tag" class="headerlink" title="&#x67E5;&#x770B;tag"></a>&#x67E5;&#x770B;tag</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#删除tag"><span class="toc-number">3.0.3.</span> <span class="toc-text"><a href="#&#x5220;&#x9664;tag" class="headerlink" title="&#x5220;&#x9664;tag"></a>&#x5220;&#x9664;tag</span></a></li></ol></li></ol></li></ol>
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>

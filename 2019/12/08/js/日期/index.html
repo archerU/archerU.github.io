@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hans" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Date 日期处理 - 鹿森</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="lusen,"> 
+    <meta name="description" content="web,前提知识时区以英国（格林尼治天文台旧址）即本初子午线为中时区（零时区）、东1-12区，西1-12区。每个时区横跨经度15度，时间为1小时。
+区时每个时区的中央经线上的时间就是这个时区内统一采用的时间,"> 
+    <meta name="author" content="鹿森"> 
+    <link rel="alternative" href="atom.xml" title="鹿森" type="application/atom+xml"> 
+    <link rel="icon" href="/img/"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">鹿森</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="https://archeru.github.io"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">Date 日期处理</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Date 日期处理</h1>
+        <div class="stuff">
+            <span>十二月 08, 2019</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h2 id="前提知识"><a href="#前提知识" class="headerlink" title="前提知识"></a>前提知识</h2><h3 id="时区"><a href="#时区" class="headerlink" title="时区"></a>时区</h3><p>以英国（格林尼治天文台旧址）即本初子午线为中时区（零时区）、东1-12区，西1-12区。每个时区横跨经度15度，时间为1小时。</p>
+<h3 id="区时"><a href="#区时" class="headerlink" title="区时"></a>区时</h3><p>每个时区的中央经线上的时间就是这个时区内统一采用的时间，称为区时。</p>
+<h3 id="UTC-协调世界时"><a href="#UTC-协调世界时" class="headerlink" title="UTC 协调世界时"></a>UTC 协调世界时</h3><p>协调世界时，又称世界统一时间、世界标准时间、国际协调时间。</p>
+<h3 id="GMT-格林尼治标准时"><a href="#GMT-格林尼治标准时" class="headerlink" title="GMT 格林尼治标准时"></a>GMT 格林尼治标准时</h3><p>格林尼治标准时间的正午是指当太阳横穿格林尼治子午线时的时间。<br>在不需要精确到秒的情况下，通常将GMT 和UTC 视作等同。但UTC 更加科学更加精确，它是以原子时为基础，在时刻上尽量接近世界时的一种时间计量系统。</p>
+<h2 id="软件系统中的时间"><a href="#软件系统中的时间" class="headerlink" title="软件系统中的时间"></a>软件系统中的时间</h2><h3 id="RTC-硬件时钟"><a href="#RTC-硬件时钟" class="headerlink" title="RTC 硬件时钟"></a>RTC 硬件时钟</h3><p>实时时钟为操作系统提供了一个可靠的时间，并且在断电的情况下，RTC实时时钟也可以通过电池供电，一直运行下去，用来保存和同步计算机操作系统时间。</p>
+<h3 id="系统时钟"><a href="#系统时钟" class="headerlink" title="系统时钟"></a>系统时钟</h3><p>系统时钟，操作系统认知的时间，包括时区信息和UTC时间（unix时戳均使用1970年1月1日0时0分0秒到目前的UTC秒数）两部分。</p>
+<h3 id="本地-local-时间"><a href="#本地-local-时间" class="headerlink" title="本地 local 时间"></a>本地 local 时间</h3><p>rtc保存的时间可以有两种，一是utc时间，二是local时间，以东八区为例：</p>
+<ul>
+<li>当rtc时间为utc时间：系统utc时间 = rtc时间， 本地local时间 = rtc时间 + 8小时</li>
+<li>当rtc时间为local时间：系统utc时间 = rtc时间 - 8小时， 本地local时间 = rtc时间</li>
+</ul>
+<p>两种设置都可以，没有明确规定，不过一般Windows和Linux都默认rtc保存local本地时间。</p>
+<h2 id="Date-对象与函数"><a href="#Date-对象与函数" class="headerlink" title="Date 对象与函数"></a>Date 对象与函数</h2><h2 id="开源库"><a href="#开源库" class="headerlink" title="开源库"></a>开源库</h2><h3 id="Moment-js"><a href="#Moment-js" class="headerlink" title="Moment.js"></a><a href="http://momentjs.cn/" target="_blank" rel="noopener">Moment.js</a></h3><h2 id="写一个库"><a href="#写一个库" class="headerlink" title="写一个库"></a>写一个库</h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://blog.csdn.net/u010507799/article/details/52288190" target="_blank" rel="noopener">时间时区概念及常用时间函数</a></p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" rel="noopener">Developer Date</a></p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/5146554.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/qq/001faIUs4M2zna.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class='side'>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前提知识"><span class="toc-number">1.</span> <span class="toc-text"><a href="#&#x524D;&#x63D0;&#x77E5;&#x8BC6;" class="headerlink" title="&#x524D;&#x63D0;&#x77E5;&#x8BC6;"></a>&#x524D;&#x63D0;&#x77E5;&#x8BC6;</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#时区"><span class="toc-number">1.1.</span> <span class="toc-text"><a href="#&#x65F6;&#x533A;" class="headerlink" title="&#x65F6;&#x533A;"></a>&#x65F6;&#x533A;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#区时"><span class="toc-number">1.2.</span> <span class="toc-text"><a href="#&#x533A;&#x65F6;" class="headerlink" title="&#x533A;&#x65F6;"></a>&#x533A;&#x65F6;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UTC-协调世界时"><span class="toc-number">1.3.</span> <span class="toc-text"><a href="#UTC-&#x534F;&#x8C03;&#x4E16;&#x754C;&#x65F6;" class="headerlink" title="UTC &#x534F;&#x8C03;&#x4E16;&#x754C;&#x65F6;"></a>UTC &#x534F;&#x8C03;&#x4E16;&#x754C;&#x65F6;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#GMT-格林尼治标准时"><span class="toc-number">1.4.</span> <span class="toc-text"><a href="#GMT-&#x683C;&#x6797;&#x5C3C;&#x6CBB;&#x6807;&#x51C6;&#x65F6;" class="headerlink" title="GMT &#x683C;&#x6797;&#x5C3C;&#x6CBB;&#x6807;&#x51C6;&#x65F6;"></a>GMT &#x683C;&#x6797;&#x5C3C;&#x6CBB;&#x6807;&#x51C6;&#x65F6;</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#软件系统中的时间"><span class="toc-number">2.</span> <span class="toc-text"><a href="#&#x8F6F;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x65F6;&#x95F4;" class="headerlink" title="&#x8F6F;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x65F6;&#x95F4;"></a>&#x8F6F;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x65F6;&#x95F4;</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#RTC-硬件时钟"><span class="toc-number">2.1.</span> <span class="toc-text"><a href="#RTC-&#x786C;&#x4EF6;&#x65F6;&#x949F;" class="headerlink" title="RTC &#x786C;&#x4EF6;&#x65F6;&#x949F;"></a>RTC &#x786C;&#x4EF6;&#x65F6;&#x949F;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#系统时钟"><span class="toc-number">2.2.</span> <span class="toc-text"><a href="#&#x7CFB;&#x7EDF;&#x65F6;&#x949F;" class="headerlink" title="&#x7CFB;&#x7EDF;&#x65F6;&#x949F;"></a>&#x7CFB;&#x7EDF;&#x65F6;&#x949F;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本地-local-时间"><span class="toc-number">2.3.</span> <span class="toc-text"><a href="#&#x672C;&#x5730;-local-&#x65F6;&#x95F4;" class="headerlink" title="&#x672C;&#x5730; local &#x65F6;&#x95F4;"></a>&#x672C;&#x5730; local &#x65F6;&#x95F4;</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Date-对象与函数"><span class="toc-number">3.</span> <span class="toc-text"><a href="#Date-&#x5BF9;&#x8C61;&#x4E0E;&#x51FD;&#x6570;" class="headerlink" title="Date &#x5BF9;&#x8C61;&#x4E0E;&#x51FD;&#x6570;"></a>Date &#x5BF9;&#x8C61;&#x4E0E;&#x51FD;&#x6570;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开源库"><span class="toc-number">4.</span> <span class="toc-text"><a href="#&#x5F00;&#x6E90;&#x5E93;" class="headerlink" title="&#x5F00;&#x6E90;&#x5E93;"></a>&#x5F00;&#x6E90;&#x5E93;</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Moment-js"><span class="toc-number">4.1.</span> <span class="toc-text"><a href="#Moment-js" class="headerlink" title="Moment.js"></a><a href="http://momentjs.cn/" target="_blank" rel="noopener">Moment.js</a></span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#写一个库"><span class="toc-number">5.</span> <span class="toc-text"><a href="#&#x5199;&#x4E00;&#x4E2A;&#x5E93;" class="headerlink" title="&#x5199;&#x4E00;&#x4E2A;&#x5E93;"></a>&#x5199;&#x4E00;&#x4E2A;&#x5E93;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考"><span class="toc-number">6.</span> <span class="toc-text"><a href="#&#x53C2;&#x8003;" class="headerlink" title="&#x53C2;&#x8003;"></a>&#x53C2;&#x8003;</span></a></li></ol>
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
